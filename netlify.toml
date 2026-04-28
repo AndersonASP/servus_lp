@@ -1,5 +1,7 @@
 [build]
   command = "npm run build"
+  # Tem de ser uma subpasta da base (não a raiz), senão o @netlify/plugin-nextjs falha.
+  publish = ".next"
 
 # Runtime Next.js (OpenNext) — necessário para App Router, rotas e server actions.
 [[plugins]]
