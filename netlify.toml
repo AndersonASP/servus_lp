@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+
+# Runtime Next.js (OpenNext) — necessário para App Router, rotas e server actions.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "20"
